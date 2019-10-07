@@ -1,8 +1,8 @@
-//    1
-//   1 1
-//  1 2 1
-// 1 3 3 1
-//1 4 6 4 1
+//     1
+//    1 1
+//   1 2 1
+//  1 3 3 1
+// 1 4 6 4 1
 public IList<IList<int>> Generate(int numRows){
     List<IList<int>> res = new List<IList<int>>();
     if(numRows == 0){
@@ -26,7 +26,7 @@ public IList<IList<int>> Generate(int numRows){
     return res;
 }
 
-// follow up, get k level row. start index from 0
+// Follow up, get k level row. start index from 0
 public IList<int> GetRow(int rowIndex){
     int[] res = new int[rowIndex + 1];
     res[0] = 1;
